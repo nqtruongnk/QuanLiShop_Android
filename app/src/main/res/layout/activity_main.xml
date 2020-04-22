@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:background="@drawable/logo_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="15dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Login"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+
+                    >
+
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_edtext"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:hint="Enter your Email/Username"
+                    android:paddingLeft="5dp">
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_edtext"
+                    android:drawableLeft="@drawable/ic_key"
+                    android:hint="Enter your Password"
+                    android:paddingLeft="5dp">
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="8dp"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/colorOrange"
+                    android:textStyle="italic|bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:text="Remember me"
+        android:textColor="@color/colorOrange"></CheckBox>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+        android:textColor="@color/colorOrange"
+        android:background="@drawable/custom_button"
+        android:textAllCaps="false"
+        android:layout_width="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+        android:text="SingIn"
+        android:textSize="35dp"></Button>
+        <Button
+            android:id="@+id/btnRegister"
+            android:textColor="@color/colorOrange"
+            android:background="@drawable/custom_button"
+            android:textAllCaps="false"
+            android:layout_width="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="35dp"></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorOrange"
+            android:text="Or"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login With"
+            android:textSize="18dp"
+            android:textColor="@color/colorOrange"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_face"></ImageView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/logo_gmail"></ImageView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/logo_twitter"></ImageView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/logo_insta"></ImageView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
