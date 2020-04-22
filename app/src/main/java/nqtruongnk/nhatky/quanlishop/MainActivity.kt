@@ -30,46 +30,51 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun signUpUser(){
-        if (edtUsername.text.toString().isEmpty()){
+    private fun signUpUser() {
+        if (edtUsername.text.toString().isEmpty()) {
             edtUsername.error = "Plesase Enter Email!"
             edtUsername.requestFocus()
             return
         }
 
-        if (!Patterns.EMAIL_ADDRESS.matcher(edtUsername.text.toString()).matches()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(edtUsername.text.toString()).matches()) {
             edtUsername.error = "Plesase Enter valid Email!"
             edtUsername.requestFocus()
             return
         }
 
-        if (edtPassword.text.toString().isEmpty()){
+        if (edtPassword.text.toString().isEmpty()) {
             edtPassword.error = "Plesase Enter Password!"
             edtPassword.requestFocus()
             return
         }
 
-        auth.createUserWithEmailAndPassword(edtUsername.text.toString(), edtPassword.text.toString())
+//        auth.createUserWithEmailAndPassword(edtUsername.text.toString(), edtPassword.text.toString())
+//            .addOnCompleteListener(this) { task ->
+//                if (task.isSuccessful) {
+//                    startActivity(Intent(this,Register::class.java))
+//                    finish()
+//                } else {
+//                   Toast.makeText(baseContext, "Sign Up failed. Try again after some time.",
+//                        Toast.LENGTH_SHORT).show()
+//                }
+//
+//                // ...
+//            }
+        auth.signInWithEmailAndPassword(edtUsername.text.toString(), edtPassword.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    startActivity(Intent(this,Main2Activity::class.java))
+                    startActivity(Intent(this, Main2Activity::class.java))
                     finish()
                 } else {
-                   Toast.makeText(baseContext, "Sign Up failed. Try again after some time.",
-                        Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        baseContext, "Sign Up failed. Try again after some time.",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
-
-                // ...
             }
+    }
 
     }
 
 
-
-
-
-
-
-
-
-}
