@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        auth = FirebaseAuth.getInstance()
         btnRegister.setOnClickListener {
             val intent: Intent= Intent(this, Register::class.java)
             startActivity(intent)
-            auth = FirebaseAuth.getInstance()
+
         }
 
         btnSingIn.setOnClickListener(){
