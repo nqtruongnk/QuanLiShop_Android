@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1057436166104",
+    "firebase_url": "https://quanlishop-d9ad9.firebaseio.com",
+    "project_id": "quanlishop-d9ad9",
+    "storage_bucket": "quanlishop-d9ad9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057436166104:android:dd70af8e8cd43741e534ad",
+        "android_client_info": {
+          "package_name": "nqtruongnk.nhatky.quanlishop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057436166104-va7heje9qksbqmf4jlduie1fkjmo10rj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nqtruongnk.nhatky.quanlishop",
+            "certificate_hash": "fc1545eff7d8cda652a688fc71a54f2d252dbaa8"
+          }
+        },
+        {
+          "client_id": "1057436166104-ltvi88i4vfmqgia88tuofm90dadpgl5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlUyqPXWzGgkejqd9F0426PXttIZsUMsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057436166104-ltvi88i4vfmqgia88tuofm90dadpgl5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

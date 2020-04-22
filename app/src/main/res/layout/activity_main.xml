@@ -52,6 +52,7 @@
                 </TextView>
 
                 <EditText
+                    android:id="@+id/edtUsername"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_margin="20dp"
@@ -64,12 +65,14 @@
                 </EditText>
 
                 <EditText
+                    android:id="@+id/edtPassword"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_margin="20dp"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/custom_edtext"
                     android:drawableLeft="@drawable/ic_key"
+                    android:inputType="textPassword"
                     android:hint="Enter your Password"
                     android:paddingLeft="5dp">
 
@@ -115,6 +118,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnSingIn"
         android:textColor="@color/colorOrange"
         android:background="@drawable/custom_button"
         android:textAllCaps="false"
